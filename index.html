@@ -503,7 +503,16 @@
 							</ul>
 						</div> -->
 						
-						<p>Updated 27 October, 2024 </a> </p>
+						<p id="update-date"></p>
+
+						<script>
+							// JavaScript to update the date dynamically
+							const dateElement = document.getElementById("update-date");
+							const currentDate = new Date();
+							const options = { year: 'numeric', month: 'long', day: 'numeric' };
+							dateElement.innerHTML = `Updated ${currentDate.toLocaleDateString('en-US', options)}`;
+						</script>
+						
 					</div>
 				</div>
 			</div>
